@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="./style.css" rel="stylesheet">
+    </head>
+    <body align="center">
+        <nav>
+            <div id="titleshown"></div>
+            <div id="buttons">
+                <div id="minimize"><span>&dash;</span></div>
+                <div id="maximize"><span>&square;</span></div>
+                <div id="quit"><span>&times;</span></div>
+            </div>
+        </nav>
+        <main>
+            <div class="container">
+                <h1>DeathBot's Painel</h1>
+                <br>
+                <br>
+                Bot Count: <input type="number" value="1" id="bot_count"><br>
+                Host: <input value="localhost" id="server_ip">:<input type="number" value="25565" id="server_port"></input><br>
+                Base Username: <input type="text" value="Bot_%%%%" id="bot_name"> (% = Random Number)<br>
+                Join Delay: <input type="number" value="5000" id="join_delay"><br>
+                <br><br>
+                <input id="chat_msg"> <button onclick="sendMsg()">Send</button><br><br>
+                AutoChat <input type="checkbox" id="autochat"><br>
+                AutoWalk: [<input type="checkbox" id="autowalk_forward"> Forward]
+                [<input type="checkbox" id="autowalk_back"> Back]
+                [<input type="checkbox" id="autowalk_left"> Right]
+                [<input type="checkbox" id="autowalk_right"> Left]<br>
+                AutoJump <input type="checkbox" id="autojump"><br>
+                KillAura: [<input type="checkbox" id="killaura"> KillAura]
+                [<input type="checkbox" id="killaura_follow"> Hunt]<br><br>
+                AutoChat Message: <input id="autochat_msg"><br>
+                AutoChat Delay: <input id="autochat_delay" type="number" value="5000"><br><br>
+
+                JoinCmd: <input type="checkbox" id="joincmd"><br>
+                JoinCmd Delay: <input id="joincmd_delay" type="number" value="1000"><br>
+                JoinCmd Message: <input id="joincmd_msg"><br><br>
+                
+                <button id="startConn" onclick="startConn()">Start Connection</button><br>
+            </div>
+            <h3>Logs</h3>
+            <ul id="logs">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </main>
+        <script src="./script.js"></script>
+    </body>
+</html>

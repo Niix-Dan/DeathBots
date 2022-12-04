@@ -1,0 +1,20 @@
+{
+  "name": "deathmine",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^21.3.1"
+  },
+  "dependencies": {
+    "mineflayer": "^4.5.1",
+    "mineflayer-pathfinder": "^2.4.1"
+  }
+}

@@ -1,0 +1,61 @@
+body {
+    background-color: #1B1B1D;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+nav {
+    display: block;
+    width: calc(100% - 10px);
+    height: 10px;
+    -webkit-app-region: drag;
+    -webkit-user-select: none;
+    position: fixed;
+    z-index: 1;
+  }
+  
+  nav #titleshown {
+    width: 30%;
+    height: 100%;
+    line-height: 10px;
+    color: #f7f7f7;
+    float: left;
+    padding: 0 0 0 1em;
+  }
+  
+  nav #buttons {
+    float: right;
+    width: 100px;
+    height: 100%;
+    line-height: 10px;
+    -webkit-app-region: no-drag;
+  }
+  
+  nav #buttons #minimize,
+  nav #buttons #maximize,
+  nav #buttons #quit {
+    float: left;
+    height: 100%;
+    width: 33.333334%;
+    text-align: center;
+    color: #f7f7f7;
+    cursor: default;
+  }
+  
+  nav #buttons #minimize:hover {
+    color: aqua;
+  }
+  nav #buttons #maximize:hover {
+    color: aqua;
+  }
+  nav #buttons #quit:hover {
+    color: lightcoral;
+  }
+  
+  main {
+    overflow: auto;
+    height: calc(100vh - 10px);
+    position: absolute;
+    left: 0;
+    padding: 0;
+    width: 100%;
+  }
